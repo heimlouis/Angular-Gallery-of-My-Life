@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width:100%;
+   }
+   
+   .h1 {
+    margin-top: 10px;
+    color: #444;
+    margin: 0;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 50px;
+   }
+
+   .name {
+    color: #444;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+   }
+   
+   .thumbnail {
+    position: relative;
+    border-radius: 0;
+    padding: 5px 5px 10px 50px;
+   }
+   
+   .thumbnail img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px 0px 0px 25px;
+    height: 100px;
+    width: 100px;
+   }
+   
+   .title {
+    color: #444;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+   }
+
+   .rating {
+    text-align: right;
+    padding:0px 35px 0px 0px;
+   }
+   
+   .likes {
+    background: #F65A5B ;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 -30px 0 40px;
+    text-align: center;
+    font-weight: 200;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background 500ms;
+   }
+   
+   .likes:hover {
+    color: #F65A5B ;
+      background: rgba(246, 90, 91, 0.25);
+      transition: background 500ms;
+   }
+
+   

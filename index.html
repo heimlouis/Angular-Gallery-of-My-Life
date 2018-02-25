@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="vm">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Gallery</title>
+  <script src="vendors/angular.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link href="styles/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div ng-controller="MainController as vm">
+    <h1 class="h1" >{{ vm.title }}</h1>
+      <div ng-repeat="picture in vm.picturesArray" class="col-md-6">
+        <div ng-click=""class="thumbnail">
+          <img ng-src="{{picture.photo}}">
+          <h2 class="name">{{picture.name}}</h2>
+            <div class="rating">
+              <p class="likes" ng-click="plusOne($index)">+ {{picture.likes}} </p>
+            </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
