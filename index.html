@@ -5,20 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My Gallery</title>
+
+  <!-- Angular -->
   <script src="server/public/vendors/angular.min.js"></script>
   <script src="server/public/scripts/client.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="server/public/vendors/bootstrap.css">
+  <link rel="stylesheet" href="server/public/vendors/bootstrap-theme.css">
+
+  <!-- Custom Styles -->
   <link href="server/public/styles/style.css" rel="stylesheet" />
+
 </head>
-<body>
-  <div ng-controller="MainController as vm">
-    <h1 class="h1" >{{ vm.title }}</h1>
-      <div ng-repeat="picture in vm.picturesArray" class="col-md-6">
-        <div ng-click=""class="thumbnail">
-          <img ng-src="{{picture.photo}}">
-          <h2 class="name">{{picture.name}}</h2>
-            <div class="rating">
-              <p class="likes" ng-click="plusOne($index)">+ {{picture.likes}} </p>
-            </div>
+<body class="background">
+  <div class="row" ng-controller="MainController as vm">
+    <h1 class="h1">{{ vm.title }}</h1>
+      <div class="row">
+        <div ng-repeat="picture in vm.picturesArray">
+          <div class="clearfix" ng-if="$index % 3 == 0"></div>
+          <div class="col-sm-4">
+            <div ng-click=""class="thumbnail">
+              <img ng-src="{{picture.photo}}">
+              <h2 class="name">{{picture.name}}</h2>
+                <div class="rating">
+                  <p class="likes" ng-click="plusOne($index)">+ {{picture.likes}} </p>
+                </div>
+              </div>
+          </div> 
         </div>
       </div>
   </div>

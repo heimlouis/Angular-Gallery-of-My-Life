@@ -1,17 +1,26 @@
 html, body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
     width:100%;
+   }
+
+  .background {
+    background-image: url("../images/Honeymoon.jpg");
+    background-size: 1600px 900px;
    }
    
    .h1 {
     margin-top: 10px;
-    color: #444;
+    color: rgb(43, 42, 42);
     margin: 0;
     font-size: 35px;
-    font-weight: 800;
+    font-weight: 700;
     padding: 50px;
+   }
+
+   .row {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
    }
 
    .name {
@@ -19,23 +28,27 @@ html, body {
     margin: 0;
     font-size: 18px;
     font-weight: 400;
-    height: 25px;
-    width: 150px;
     text-align: center;
    }
    
    .thumbnail {
     position: relative;
-    border-radius: 0;
-    padding: 5px 5px 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
    }
-   
+
+   img:hover {
+    opacity: 0.65;
+    transition: 650ms;
+   }
+
    .thumbnail img {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 0px 0px 0px 25px;
+    border-radius: 8px;
     height: 100px;
     width: 100px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.75);
    }
    
    .title {

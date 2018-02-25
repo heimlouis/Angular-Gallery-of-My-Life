@@ -23,7 +23,7 @@ app.controller('MainController', ['$scope', function($scope) {
             likes: 0
         },
         {
-            name: 'MG last drive',
+            name: 'Last MG',
             photo: 'server/public/images/MGLastDrive.jpg',
             likes: 0
         },
@@ -33,7 +33,7 @@ app.controller('MainController', ['$scope', function($scope) {
             likes: 0
         },
         {
-            name: 'Casper and Igor',
+            name: 'Casper & Igor',
             photo: 'server/public/images/Casper.jpg',
             likes: 0
         }
