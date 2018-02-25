@@ -9,32 +9,32 @@ app.controller('MainController', ['$scope', function($scope) {
     self.picturesArray = [
         {
             name: 'Quinton',
-            photo: 'images/Quinton.jpg',
+            photo: 'server/public/images/Quinton.jpg',
             likes: 0
         },
         {
             name: 'Maxwell',
-            photo: 'images/Maxwell.jpg',
+            photo: 'server/public/images/Maxwell.jpg',
             likes: 0
         },
         {
             name: 'Our wedding',
-            photo: 'images/OurWedding.jpg',
+            photo: 'server/public/images/OurWedding.jpg',
             likes: 0
         },
         {
             name: 'MG last drive',
-            photo: 'images/MGLastDrive.jpg',
+            photo: 'server/public/images/MGLastDrive.jpg',
             likes: 0
         },
         {
             name: 'First Corvette',
-            photo: 'images/FirstCorvette.jpg',
+            photo: 'server/public/images/FirstCorvette.jpg',
             likes: 0
         },
         {
             name: 'Casper and Igor',
-            photo: 'images/Casper.jpg',
+            photo: 'server/public/images/Casper.jpg',
             likes: 0
         }
     ];
