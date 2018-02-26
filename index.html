@@ -25,8 +25,9 @@
         <div ng-repeat="picture in vm.picturesArray">
           <div class="clearfix" ng-if="$index % 3 == 0"></div>
           <div class="col-sm-4">
-            <div ng-click=""class="thumbnail">
-              <img ng-src="{{picture.photo}}">
+            <div ng-show"thumbImg" ng-click="toggle()" class="thumbnail">
+            <!-- <textarea ng-hide"thumbTxt" class="thumbTextBox">{{picture.imageText}}</textarea> -->
+              <img class="imgClick" ng-src="{{picture.photo}}">
               <h2 class="name">{{picture.name}}</h2>
                 <div class="rating">
                   <p class="likes" ng-click="plusOne($index)">+ {{picture.likes}} </p>

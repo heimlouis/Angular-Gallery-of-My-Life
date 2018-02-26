@@ -24,7 +24,7 @@ html, body {
    }
 
    .name {
-    color: #444;
+    color: rgb(68, 68, 68);
     margin: 0;
     font-size: 18px;
     font-weight: 400;
@@ -35,6 +35,9 @@ html, body {
     position: relative;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
    }
 
    img:hover {
