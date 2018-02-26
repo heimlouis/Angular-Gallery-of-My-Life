@@ -19,7 +19,7 @@
 
 </head>
 <body class="background">
-  <div class="row" ng-controller="MainController as vm">
+  <div class="row" ng-controller="MainController as vm" ng-cloak>
     <h1 class="h1">{{ vm.title }}</h1>
     <div class="row">
       <div ng-repeat="picture in vm.picturesArray">
@@ -28,7 +28,7 @@
           <div ng-show"thumbImg" class="thumbnail">
             <img ng-hide="text" ng-click="text=!text" class="imgClick" ng-src="{{picture.photo}}">
             <textarea ng-hide="!text" ng-click="text=!text" class="thumbTextBox">{{picture.imageText}}</textarea>
-            <h2 class="name">{{picture.name}}</h2>
+            <h3 class="name">{{picture.name}}</h3>
               <div class="rating">
                 <p class="likes" ng-click="plusOne($index)">+ {{picture.likes}} </p>
               </div>

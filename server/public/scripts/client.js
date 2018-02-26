@@ -4,19 +4,10 @@ const app = angular.module('vm', []);
 
 //Controller
 app.controller('MainController', ['$scope', function($scope) {
-  let self = this;
-  self.title = 'Gallary';
+  let gallery = this;
+  gallery.title = 'Gallary';
 
-//   $.ajax({
-//       type: 'GET',
-//       url: '/gallery'
-//   }).done(function(response[i]){
-//       console.log('gallery get response', response);
-//   }).fail(function(response){
-//       console.log(response);
-//   })
-
-    self.picturesArray = [
+    gallery.picturesArray = [
         {
             name: 'Quinton',
             photo: 'server/public/images/Quinton.jpg',
@@ -55,7 +46,7 @@ app.controller('MainController', ['$scope', function($scope) {
         }
     ];
     $scope.plusOne = function(i){
-        self.picturesArray[i].likes += 1;
+        gallery.picturesArray[i].likes += 1;
         console.log('in likes counter');
     };
 }]);
