@@ -5,7 +5,17 @@ const app = angular.module('vm', []);
 //Controller
 app.controller('MainController', ['$scope', function($scope) {
   let self = this;
-  self.title = 'Gallary of My Life';
+  self.title = 'Gallary';
+
+//   $.ajax({
+//       type: 'GET',
+//       url: '/gallery'
+//   }).done(function(response[i]){
+//       console.log('gallery get response', response);
+//   }).fail(function(response){
+//       console.log(response);
+//   })
+
     self.picturesArray = [
         {
             name: 'Quinton',
