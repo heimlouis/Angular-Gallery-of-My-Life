@@ -27,13 +27,13 @@ app.controller('MainController', ['$scope', function($scope) {
             imageText: 'April 4th 2015'
         },
         {
-            name: 'Last MG',
+            name: 'MG',
             photo: 'server/public/images/MGLastDrive.jpg',
             likes: 0,
             imageText: 'Almost 4 years of work to get this on the road.'
         },
         {
-            name: 'First Corvette',
+            name: 'Corvette',
             photo: 'server/public/images/FirstCorvette.jpg',
             likes: 0,
             imageText: '40 years later, I finally have one!'
